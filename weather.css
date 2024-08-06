@@ -47,11 +47,13 @@ body {
     width: 20px;
 }
 #weather-icon{
-    width: 170px;
+    width: 150px;
+    padding-top:20px ;
 }
 .weather h1{
     font-size: 50px;
     font-weight: 500;
+   
 }
 .weather h2{
     font-size: 40px;
@@ -69,7 +71,13 @@ body {
     height: 50px;
     
 }
-.weathicon{
+#weathicon{
+    width: 80px;
+}
+#weathicon1{
+    width: 80px;
+}
+#weathicon2{
     width: 80px;
 }
 .forecast-list{
