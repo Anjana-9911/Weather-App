@@ -5,17 +5,22 @@ body {
     padding: 0;
   }
 .card{
-    width: 90%;
+    width: 22%;
     max-width: 550px;
-    background: linear-gradient(135deg, #00feba, #5b548a);
-    color: #fff;
-    margin: 80px auto 0;
+    background: transparent;
+    color: #fef7f7;
+    margin: 223px;
     border-radius: 20px;
     padding: 40px 35px;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 34px;
     margin-bottom: 30px;
-} 
+    height: 626px;
+    border: 3px solid rgba(251, 249, 249, 0.997);
+    backdrop-filter: blur(10px);
+   
+}
+
 .search{
     width: 100%;
     display: flex;
@@ -25,8 +30,8 @@ body {
 .search input{
     border: 0;
     outline: 0;
-    background: #ebfffc;
-    color: #555;
+    background: #f0f4f3;
+    color: #3b3b3b;
     padding: 10px 25px;
     height: 30px;
     border-radius: 30px;
@@ -37,7 +42,7 @@ body {
 .search button{
     border: 0;
     outline: 0;
-    background: #ebfffc;
+    background: #fcffff;
     border-radius: 50%;
     width: 50px;
     height: 50px; 
@@ -47,29 +52,69 @@ body {
     width: 20px;
 }
 #weather-icon{
-    width: 150px;
+    width: 110px;
     padding-top:20px ;
 }
-.weather h1{
-    font-size: 50px;
+.temp{
+    font-size: 30px;
     font-weight: 500;
-   
+   margin-bottom: 20px;
 }
 .weather h2{
     font-size: 40px;
     font-weight: 400;
     margin-top: -20px;
 }
+.hourly-forecast-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    margin-top: 50px;
+    font-size: 10px;
+}
+
+.hours {
+    font-size: 15px;
+}
+.hourly-forecast-list p{
+    font-size: 15px;
+}
+
+.time-icon{
+    max-height: 50px;
+    width: auto;
+}
+  
+.weather-details{
+    position: absolute;
+    top: 28%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 700px;
+    height: 370px;
+    background: transparent;
+    border: 3px solid rgb(246, 244, 244);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    float: left;
+    color: white;
+    
+}
 .details{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 30px;
+    padding: 0 70px;
     margin-top: 50px;
 }
 .col img{
-    height: 50px;
-    
+    height: 30px;
+
+}
+.colu img{
+    height: 40px;
 }
 #weathicon{
     width: 80px;
@@ -79,6 +124,23 @@ body {
 }
 #weathicon2{
     width: 80px;
+}
+
+.forecast-details{
+    position: absolute;
+    top: 73%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 700px;
+    height: 320px;
+    background: transparent;
+    border: 3px solid rgb(243, 240, 240);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    float: left;
+    color: white;
+  
 }
 .forecast-list{
     display: flex;

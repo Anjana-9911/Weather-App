@@ -8,7 +8,7 @@
 </head> 
 <body>
 
-    <div class="card">
+    <div class = "card">
         <div class="search">
             <input type="text" placeholder="enter city name"
             spellcheck="false" onchange="changeCity(this.value)">
@@ -19,33 +19,99 @@
             <h1 class="temp">--°C</h1>
             <h2 class="city">--</h2>
             <p class="text">--</p>
-            <div class="details">
-                <div class="col">
-                    <img src="./src/images/humidity.png">
-                    <div>
-                        <p class="humidity">--%</p>
-                        <p>Humidity</p>
+        </div>
+        
+            <div class="hourly-forecast">
+                <h4>Hourly Forecast</h4>
+                <div class="hourly-forecast-list">
+                    <div class="hour1">
+                        <h5 class="hours">--</h5>
+                       <img src="" id="weat-icon" class="time-icon">
+                       <p>--°C</p>
+                       
                     </div>
-                </div>
-                <div class="col">
-                    <img src="./src/images/wind.png">
-                    <div>
-                        <p class="wind">--km/hr</p>
-                        <p>wind speed</p>
+                    <div class="hour2">
+                        <h5 class="hours">--</h5>
+                        <img src="" id="weat-icon1" class="time-icon">
+                        <p>--°C</p>
+                        
                     </div>
-                </div>
-                <div class="col">
-                    <img src="./src/images/feelslike.png">
-                    <div>
-                        <p class="feelslike">--°C</p>
-                        <p>Feels like</p>
+                    <div class="hour3">
+                        <h5 class="hours">--</h5>
+                        <img src="" id="weat-icon2" class="time-icon">
+                        <p>--°C</p>
+                       
                     </div>
+                    <div class="hour4">
+                        <h5 class="hours">--</h5>
+                        <img src="" id="weat-icon3" class="time-icon">
+                        <p>--°C</p>
+                       
+                    </div>
+                    
                 </div>
+           </div>
+        
+    </div>
+    <div class="weather-details">
+      <div class="details">
+        <div class="col">
+            <img src="./src/images/humidity.png">
+            <div>
+                <p class="humidity">--%</p>
+                <p>Humidity</p>
             </div>
         </div>
-       
+        <div class="col">
+            <img src="./src/images/wind.png">
+            <div>
+                <p class="wind">--km/hr</p>
+                <p>wind speed</p>
+            </div>
+        </div>
+        <div class="col">
+            <img src="./src/images/feelslike.png">
+            <div>
+                <p class="feelslike">--°C</p>
+                <p>Feels like</p>
+            </div>
+        </div>
+    </div>
+      <div class="details">
+        <div class="colu">
+            <img src="uv.png">
+            <div>
+                <p class="uv">--</p>
+                <p>UV</p>
+            </div>
+        </div>
+        <div class="colu">
+            <img src="./src/images/sunrise.png">
+            <div>
+                <p class="sunrise">--</p>
+                <p>Sunrise</p>
+            </div>
+        </div>
+        <div class="colu">
+            <img src="./src/images/sunset.png">
+            <div>
+                <p class="sunset">--</p>
+                <p>Sunset</p>
+            </div>
+        </div>
+        <div class="colu">
+            <img src="./src/images/air.png">
+            <div>
+                <p class="air-pressure">--</p>
+                <p>Air Pressure</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="forecast-details">
         <div class="forecast">
-            <h2>3-Day Forecast</h2>
+            <h4>3-Day Forecast</h4>
             <div class="forecast-list">
                 <div class="forecast-today">
                    <img src="" id="weathicon">
@@ -69,6 +135,7 @@
                 </div>
             </div>
        </div>
+    </div>
        <script src="weather.js"></script>
 </body>   
 </html>
